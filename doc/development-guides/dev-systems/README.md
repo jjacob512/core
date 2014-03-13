@@ -11,7 +11,7 @@ Engineers value documentation that explains how to get a development workstation
     1. (assumed to be eth0) bridge external 
     1. (assumed to be eth1) on a host-only network 192.168.124.0/24.  Give it a reasonable unused IP. 192.168.124.7 is good.
     1. (assumed to be eth2) on a host-only network 192.168.124.0/24.  *NO IP assignment* or OS interface configuration (`/etc/network/interfaces` or `/etc/sysconfig`). If using Docker, setup bridging as in [docker/docker-admin.md](docker/docker-admin.md)
-  1. Setup an .ssh keypair using `rssh-keygen`
+  1. Setup an .ssh keypair using `ssh-keygen`
   1. Optional Items that we find handy if you are developing on Windows using VMs behind corporate firewalls
     1. Squid Proxy (to cache packages)
       1. ubuntu: `sudo apt-get install squid squid-common`
